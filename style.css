@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+:root {
+    --paars: #5722CD;
+    --blauw: #4845E4;
+    --roze: #ED4385;
+    --zwart: #0C0C0C;
+    --lichtpaars: #F2F0FF;
+    --lichtgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
+    --white: #ffffff;
+}
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+    font-family: 'Merriweather', serif;
+
+}
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.inner-container {
+    flex-basis: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 50px;
+}
+
+.align-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+}
+
+.align-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+
+/* --------------- 3.2 Other --------------------------- */
+
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+
+/* --------------- 4.1 Header ------------------------- */
+
+
+nav {
+    background: rgb(72,69,228);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(90,87,235,1) 35%, rgba(72,69,228,1) 100%);
+    font-family: Roboto;
+    color: var(--white);
+    padding: 20px 0px;
+}
+
+nav a {
+
+    margin: 0px 20px;
+}
+
+
+
+header.outer-container {
+    position: relative;
+    background: rgb(72,69,228);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(90,87,235,1) 35%, rgba(72,69,228,1) 100%);    width: 100%;
+    height: 500px;
+}
+
+header div h1,h3 {
+    color: var(--white);
+    margin: 20px 0px;
+    text-align: center;
+}
+
+header button {
+    font-family: Roboto;
+    background: var(--roze);
+    color: var(--white);
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header button:hover {
+    background: #e578a3;
+
+}
+
+header button:active {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.squiggle-lines {
+    position: absolute;
+    bottom: -10px;
+
+}
+
+header img {
+    width: 60px;
+
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+.inner-container .introduction-class {
+    color: red;
+    background: #0C0C0C;
+}
+
+
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
