@@ -189,13 +189,94 @@ div.outer-container.middle-area {
     }
 
 
+/*----------------- Form ------------------------*/
+
+.outer-container.form {
+    background: rgb(72,69,228);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(90,87,235,1) 35%, rgba(72,69,228,1) 100%);
+    width: 100%;
+}
+.outer-container.form h3 {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.outer-container.form p {
+    color: var(--white);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    width: 600px;
+}
+
+label {
+    color: var(--white);
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+input {
+    font-family: 'Roboto', sans-serif;
+    color: var(--blue);
+    font-size: 1rem;
+
+}
+
+textarea {
+    height: 300px;
+}
+
+.button-send {
+
+    font-family: 'Roboto', sans-serif;
+    background: var(--roze);
+    color: var(--white);
+    padding: 15px 30px;
+    width: 150px;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button-send:hover {
+    background: #e578a3;
+
+}
+
+.button-send:active {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+
+/*---- Footer ---- */
+
+.outer-container.footer {
+    background: black;
+    width: 100%;
+    height: fit-content;
+
+}
+
+
+.outer-container.footer p {
+    color: var(--white);
+    margin: 20px 20px;
+}
+
+
 /* --------------- 4.1 Header ------------------------- */
 
 
 nav {
     background: rgb(72,69,228);
     background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(90,87,235,1) 35%, rgba(72,69,228,1) 100%);
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     color: var(--white);
     padding: 20px 0px;
 }
@@ -229,7 +310,7 @@ header div h1,h3 {
 }
 
 header button {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     background: var(--roze);
     color: var(--white);
     padding: 15px 60px;
