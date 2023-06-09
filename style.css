@@ -153,22 +153,40 @@ div.outer-container.middle-area {
 
 /*-------------------- boxen -------------*/
 
-.inner-container.box {
+.outer-box {
     display: flex;
+    flex-direction:row;
     flex-wrap: wrap;
-    flex-direction: ;
-    width: 1000px;
-    border: solid 2px blue;
-    justify-content: space-between;
+    justify-content: center;
+    width: 1200px;
+    height: 800px;
+
 
 }
 
 .box-class {
-    width: 200px;
-    height: 200px;
-    border: solid 1px black;
+    width: 350px;
+    height: 350px;
+    border: solid 1px var(--blauw);
+    margin: 2%;
 }
 
+/* -------- in de box-class ----------------- */
+    .box-class img {
+        width: 20%;
+        margin: 30px 10px 20px 30px;
+    }
+    .box-class h5 {
+        font-size: 1.5rem;
+        color: var(--blauw);
+        margin: 0px 10px 20px 30px;
+    }
+
+    .box-class p {
+        font-size: 0.9rem;
+        color: var(--grijs);
+        margin: 0px 40px 20px 30px;
+    }
 
 
 /* --------------- 4.1 Header ------------------------- */
