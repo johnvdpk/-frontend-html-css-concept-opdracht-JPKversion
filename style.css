@@ -358,3 +358,281 @@ header img {
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 500px) {
+
+
+
+    /* ------------------------------- 2. Typography ----------------------------------- */
+
+    body {
+
+        font-size: 0.8rem;
+    }
+
+
+
+
+    /* --------------- 3.1 Reusables ----------------------- */
+
+    .outer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+
+
+    .inner-container {
+        flex-basis: 300px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 20px;
+    }
+
+
+    .align-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+
+    }
+
+
+
+    .align-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+    }
+
+
+
+    /*-------------------- deel 1 2 en 3 -------------*/
+
+    div.outer-container.middle-area {
+
+        background: var(--lichtgrijs);
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .area-class {
+        padding: 20px 80px;
+
+        width: 100%;
+    }
+
+    .area-class h2,img,p {
+        margin: 15px 0px;
+    }
+
+    .squiggle-line {
+        width: 2rem;
+    }
+
+    .area-class a {
+        color: var(--blauw);
+    }
+
+    .work-image {
+        width: 100%;
+        box-shadow: -1px 9px 10px -4px rgba(0,0,0,0.42);
+    }
+
+    /*-------------------- boxen -------------*/
+
+    .outer-box {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1200px;
+        height: 800px;
+
+
+    }
+
+    .box-class {
+        width: 350px;
+        height: 350px;
+        border: solid 1px var(--blauw);
+        margin: 2%;
+    }
+
+    /* -------- in de box-class ----------------- */
+    .box-class img {
+        width: 20%;
+        margin: 30px 10px 20px 30px;
+    }
+    .box-class h5 {
+        font-size: 1.5rem;
+        color: var(--blauw);
+        margin: 0px 10px 20px 30px;
+    }
+
+    .box-class p {
+        font-size: 0.9rem;
+        color: var(--grijs);
+        margin: 0px 40px 20px 30px;
+    }
+
+
+    /*----------------- Form ------------------------*/
+
+    .outer-container.form {
+        background: rgb(72,69,228);
+        background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(90,87,235,1) 35%, rgba(72,69,228,1) 100%);
+        width: 100%;
+    }
+    .outer-container.form h3 {
+        color: var(--white);
+        font-size: 3rem;
+    }
+
+    .outer-container.form p {
+        color: var(--white);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        width: 600px;
+    }
+
+    label {
+        color: var(--white);
+        font-family:'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    input {
+        font-family: 'Roboto', sans-serif;
+        color: var(--blue);
+        font-size: 1rem;
+
+    }
+
+    textarea {
+        height: 300px;
+    }
+
+    .button-send {
+
+        font-family: 'Roboto', sans-serif;
+        background: var(--roze);
+        color: var(--white);
+        padding: 15px 30px;
+        width: 150px;
+        margin: 20px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .button-send:hover {
+        background: #e578a3;
+
+    }
+
+    .button-send:active {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    }
+
+
+    /*---- Footer ---- */
+
+    .outer-container.footer {
+        background: black;
+        width: 100%;
+        height: fit-content;
+
+    }
+
+
+    .outer-container.footer p {
+        color: var(--white);
+        margin: 20px 20px;
+    }
+
+
+    /* --------------- 4.1 Header ------------------------- */
+
+
+    nav {
+        background: rgb(72,69,228);
+        background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(90,87,235,1) 35%, rgba(72,69,228,1) 100%);
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8rem;
+        color: var(--white);
+        padding: 20px 0px;
+    }
+
+    nav.align-right {
+
+        justify-content: center;
+
+    }
+
+
+    header.outer-container {
+        position: relative;
+        background: rgb(72,69,228);
+        background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(90,87,235,1) 35%, rgba(72,69,228,1) 100%);    width: 100%;
+        height: 500px;
+    }
+
+    header div h1,h3 {
+        color: var(--white);
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    header button {
+        font-family: 'Roboto', sans-serif;
+        background: var(--roze);
+        color: var(--white);
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+    header img {
+        width: 60px;
+
+    }
+
+    /* --------------- 4.2 Introduction ------------------- */
+
+    .inner-container.introduction-class h2 {
+        color: var(--blauw);
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .inner-container.introduction-class p {
+        margin: 20px 0px;
+        font-family: Roboto;
+
+    }
+    .inner-container.introduction-class a {
+        color: var(--blauw);
+
+    }
+
+
+}
